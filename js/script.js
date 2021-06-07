@@ -48,7 +48,7 @@ function getplayerrow(player) {
 function getplayers() {
   var pageno = $("#currentpage").val();
   $.ajax({
-    url: "/ajax.php",
+    url: "https://myfriends.herokuapp.com/ajax.php",
     type: "GET",
     dataType: "json",
     data: { page: pageno, action: "getusers" },
